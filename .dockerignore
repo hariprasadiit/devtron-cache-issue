@@ -1,0 +1,13 @@
+.dockerignore
+node_modules
+npm-debug.log
+Dockerfile
+.git
+.gitignore
+.npmrc
+lib
+*.http
+.nuxt
+dist
+.quasar
+yarn-error.log
