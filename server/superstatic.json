@@ -1,0 +1,31 @@
+{
+  "public": "dist",
+  "cleanUrls": true,
+  "appAssociation": "AUTO",
+  "headers": [
+    {
+      "source": "**/*.@(jpg|jpeg|gif|png|svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, max-age=0"
+        }
+      ]
+    },
+    {
+      "source": "**/*.@(js|css)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, max-age=0"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
+}
